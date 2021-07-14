@@ -1,0 +1,352 @@
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(6, 15, 49, 0.9);
+    padding: 1rem;
+    overflow: auto;
+    &.show {
+        display: flex;
+    }
+}
+
+.modal__dialog {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    &--sm {
+        max-width: 900px;
+    }
+    transform: scale(0);
+    transition: transform .5s linear;
+}
+
+.modal-work__preview {
+    position: relative;
+    width: 65%;
+    overflow: hidden;
+}
+
+.modal-work__content {
+    width: 35%;
+    padding: 3.4rem 6.6rem 1rem 1.73rem;
+    position: relative;
+}
+
+.modal-work {
+    display: flex;
+}
+
+.modal-work__header {
+    margin-bottom: 2.2rem;
+}
+
+.modal-work__photo {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1px;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.modal-work__title {
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    font-size: 2.12rem;
+    color: #2B2A2C;
+    font-weight: 700;
+}
+
+.modal-work__info {
+    font-size: 1.2rem;
+    color: #6A696B;
+    text-transform: uppercase;
+    &-divider {
+        margin: 0 1rem;
+    }
+}
+
+.modal-work__client {
+    &-title {
+        font-size: 1.06rem;
+        color: #2B2A2C;
+        font-weight: 700;
+        margin-bottom: 0.2rem;
+    }
+    &-name {
+        font-size: 0.94rem;
+        font-style: italic;
+        color: #BEBEBF;
+        margin-bottom: 2.2rem;
+    }
+}
+
+.modal-work__text {
+    margin-bottom: 8.66em;
+    font-size: 0.8rem;
+    color: #908F91;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.modal__close {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 0.9rem;
+    right: 1rem;
+    z-index: 2;
+    transition: transform .2s linear;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+.modal-work__footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 1.8rem 1rem;
+}
+
+.modal-work__btn {
+    background: none;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: .94rem;
+    color: #2B2A2C;
+    text-transform: uppercase;
+    &--prev {
+        padding-right: 0.3rem;
+    }
+    &--next {
+        padding-left: 0.3rem;
+    }
+}
+
+.modal__content {
+    padding: 5rem 1rem;
+}
+
+.modal__title {
+    margin-bottom: 3.6rem;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #2B2A2C;
+}
+
+.timeline {
+    display: flex;
+    margin: 4.2rem auto;
+    width: 100%;
+    max-width: 768px;
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: #6A696B;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
+}
+
+.timeline__col {
+    width: 50%;
+    &--left {
+        text-align: right;
+        padding-right: 3.2rem;
+    }
+    &--right {
+        padding-left: 3.2rem;
+    }
+}
+
+.timeline__title {
+    font-size: 1.2rem;
+    color: #2B2A2C;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2.6rem;
+}
+
+.timeline__date {
+    display: block;
+    text-decoration: underline;
+    font-size: 0.94rem;
+    color: #2B2A2C;
+    margin-bottom: 0.8rem;
+}
+
+.timeline__subtitle {
+    margin-bottom: 0.2rem;
+    font-size: 1.06rem;
+    color: #2B2A2C;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.timeline__position {
+    font-size: 0.94rem;
+    color: #2B2A2C;
+    font-style: italic;
+}
+
+.timeline__text {
+    font-size: 0.8rem;
+    color: #6A696B;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 0.8rem;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.timeline__item {
+    margin-bottom: 2.6rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.progress-bar {
+    display: flex;
+    margin-bottom: 2.6rem;
+    flex-direction: column;
+}
+
+// .progress-bar__left {}
+.progress-bar__right {
+    padding-left: 1.2rem;
+}
+
+.progress-bar__item {
+    margin-bottom: 0.4rem;
+    align-items: center;
+    display: flex;
+}
+
+.progress-bar__bar {
+    width: 139px;
+    height: 6px;
+    background-color: #EFEFEF;
+}
+
+.progress-bar__progress {
+    height: 100%;
+    background-color: #6A696B;
+}
+
+.progress-bar__title {
+    font-size: 0.94rem;
+    font-weight: 300;
+}
+
+.contact {
+    display: flex;
+    background: url(https://placehold.it/480x700) right center no-repeat;
+}
+
+// .contact__right {
+// }
+// .contact__img {
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     z-index: 1;
+// }
+.contact__left {
+    width: 47%;
+    padding: 2rem;
+}
+
+.contact__info {
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+    font-size: 0.94rem;
+    color: #2B2A2C;
+    font-weight: 300;
+}
+
+.contact__info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact__info-icon {
+    margin-right: 0.75rem;
+    width: 1.5rem;
+}
+
+.nodal__subtitle {
+    font-size: 1.06rem;
+    color: #2B2A2C;
+    font-weight: 400;
+}
+
+.form__label {
+    font-style: 0.8rem;
+    font-weight: 700;
+    color: #2B2A2C;
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    margin-left: 1.5rem;
+}
+
+.form__input,
+.form__textarea {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    border: 1px solid #D4D4D4;
+    border-radius: 1.8rem;
+    padding: 1.3rem 1.8rem;
+    font-family: inherit;
+    color: #2B2A2C;
+    font-weight: 300;
+    transition: border-color .2s linear;
+    &:focus {
+        outline: none;
+        border-color: #1E2745;
+    }
+    &::placeholder {
+        color: #2B2A2C;
+    }
+}
+
+.form__group {
+    margin-bottom: 1.8rem;
+}
+
+.form__textarea {
+    height: 200px;
+    resize: none;
+}
