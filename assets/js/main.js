@@ -1,4 +1,5 @@
 $(function() {
+    const worksSlider = $('[data-slider="slick"]');
     // filter
     let filter = $("[data-filter]");
     filter.on("click", function(event) {
@@ -33,6 +34,7 @@ $(function() {
                 transform: "scale(1)"
             });
         }, 200);
+        worksSlider.slick('setPosition');
 
     });
     modalClose.on("click", function(event) {
@@ -45,7 +47,7 @@ $(function() {
         setTimeout(function() {
             modalParent.removeClass('show');
             $("body").removeClass('no-scroll');
-        }, 1000);
+        }, 500);
     });
     $('.modal').on("click", function(event) {
         let $this = $(this);
@@ -55,9 +57,29 @@ $(function() {
         setTimeout(function() {
             $this.removeClass('show');
             $("body").removeClass('no-scroll');
-        }, 1000);
+        }, 500);
     });
     $('.modal__dialog').on("click", function(event) {
         event.stopPropagation();
+    });
+    // slider
+    worksSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true,
+    });
+    $('.slickPrev').on("click", function(event) {
+        event.preventDefault();
+        let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
+        currentSlider.slick("slickPrev");
+    });
+    $('.slickNext').on("click", function(event) {
+        event.preventDefault();
+        let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
+
+        currentSlider.slick("slickNext");
     });
 });
