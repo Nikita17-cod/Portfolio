@@ -13,11 +13,9 @@
 }
 
 .user__avatar {
+    border-radius: 50%;
     width: 57px;
     height: 57px;
-    img {
-        border-radius: 50%;
-    }
 }
 
 .user__name {

@@ -21,7 +21,7 @@
     margin: auto;
     background-color: #fff;
     &--sm {
-        max-width: 900px;
+        max-width: 650px;
     }
     transform: scale(0);
     transition: transform .5s linear;
@@ -164,6 +164,7 @@
 }
 
 .modal__title {
+    text-align: center;
     margin-bottom: 3.6rem;
     font-weight: 700;
     font-size: 3rem;
@@ -296,7 +297,7 @@
 //     z-index: 1;
 // }
 .contact__left {
-    width: 47%;
+    width: 100%;
     padding: 2rem;
 }
 
@@ -323,7 +324,9 @@
     width: 1.5rem;
 }
 
-.nodal__subtitle {
+.modal__subtitle {
+    margin-top: 1rem;
+    text-align: center;
     font-size: 1.06rem;
     color: #2B2A2C;
     font-weight: 400;

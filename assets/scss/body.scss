@@ -1,10 +1,20 @@
 .intro__inner {
     position: relative;
-    padding-top: 103px;
+    padding-top: 6.6rem;
     display: flex;
     border-bottom: 1px solid rgba(#6a696b, .3);
-    padding-bottom: 120px;
+    padding-bottom: 8rem;
     background: url("../img/symbols.png") right bottom no-repeat;
+}
+
+.intro__phone {
+    color: #2B2A2C;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .intro__content {
@@ -23,7 +33,7 @@
 }
 
 .intro__text {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-size: 1.2rem;
     color: rgba(#2b2a2c, .7);
 }
@@ -36,6 +46,7 @@
 }
 
 .social {
+    margin-top: 15px;
     display: flex;
     margin-bottom: 42px;
 }
@@ -166,10 +177,12 @@
 }
 
 .about {
-    margin: 8.4rem 0;
+    margin: 2rem 0;
 }
 
 .about__inner {
+    padding-top: 6rem;
+    border-top: 1px solid rgba(106, 105, 107, 0.3);
     display: flex;
     max-width: 1090px;
 }
@@ -182,7 +195,9 @@
 .about__photo {
     position: relative;
     img {
-        position: relative;
+        top: 20rem;
+        position: absolute;
+        bottom: 0;
         z-index: 2;
     }
     &:before {
@@ -192,7 +207,7 @@
         background-color: #efefef;
         position: absolute;
         left: 1rem;
-        bottom: 0;
+        bottom: 24rem;
         z-index: 1;
     }
 }
@@ -215,12 +230,20 @@
     font-weight: 700;
 }
 
+.about__specialization {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #2B2A2C;
+    font-weight: 700;
+    padding-bottom: 0;
+}
+
 .about__text {
     margin-bottom: 2.8rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #6a696b;
     line-height: 2;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .about__content {
@@ -229,13 +252,14 @@
 }
 
 .reviews {
+    margin-top: 5rem;
     position: relative;
     background: #332F30 url(../img/bg.png) center no-repeat;
-    padding: 4.6rem 0;
+    padding: 3rem 0;
 }
 
 .reviews__text {
-    font-size: 0.94rem;
+    font-size: 1.1rem;
     line-height: 2.2;
     color: #fff;
     text-align: center;
@@ -258,26 +282,21 @@
 }
 
 .reviews__author {
-    position: absolute;
-    top: 100%;
-    margin-top: -51.5px;
-    left: 0;
     width: 100%;
-    z-index: 1;
     text-align: center;
 }
 
 .reviews__name {
     margin-bottom: 0.3rem;
-    font-size: 1.06rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: #2b2a2c;
+    color: #fff;
 }
 
 .reviews__company {
     margin-bottom: 0.4rem;
     font-size: 0.94rem;
-    color: #6a696b;
+    color: #fff;
     font-style: italic;
     font-weight: 300;
 }
@@ -400,5 +419,12 @@
     color: #6a696b;
     &:hover {
         text-decoration: none;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    &::after {
+        color: #DFDFE0;
     }
 }

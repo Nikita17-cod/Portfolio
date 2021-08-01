@@ -1,4 +1,11 @@
 $(function() {
+    const swiper = new Swiper('.swiper-container', {
+        autoHeight: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
     const worksSlider = $('[data-slider="slick"]');
     // filter
     let filter = $("[data-filter]");
@@ -81,5 +88,19 @@ $(function() {
         let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
 
         currentSlider.slick("slickNext");
+    });
+    $(document).ready(function() {
+        $("#menu").on("click", "a", function(event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1500);
+        });
+        $("#footer__nav").on("click", "a", function(event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1500);
+        });
     });
 });
