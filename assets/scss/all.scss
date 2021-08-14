@@ -2,7 +2,11 @@ html {
     font-size: 15px;
 }
 
-// gray 6a696b
+body *::selection {
+    background: #EFEFEF;
+    color: #2B2A2C;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;

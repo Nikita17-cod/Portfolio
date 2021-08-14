@@ -345,6 +345,16 @@ html {
   font-size: 15px;
 }
 
+body *::-moz-selection {
+  background: #EFEFEF;
+  color: #2B2A2C;
+}
+
+body *::selection {
+  background: #EFEFEF;
+  color: #2B2A2C;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
