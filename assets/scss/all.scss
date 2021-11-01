@@ -13,9 +13,9 @@ body {
     font-size: 1rem;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     // background: linear-gradient(-45deg, #c7c2c2, #d4c8c8, #ffffff, #a5afad);
-    // background: linear-gradient(-45deg, #eceaea, #f7f4f4, #f3eded, #fdf7f7);
+    // background: linear-gradient(-45deg, #eceaea, #f7f4f4, #f3eded, #fcfdf7);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 10s ease infinite;
     height: 100%;
     color: #2b2a2c;
     &.no-scroll {

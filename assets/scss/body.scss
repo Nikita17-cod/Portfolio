@@ -2,7 +2,8 @@
     position: relative;
     padding-top: 6.6rem;
     display: flex;
-    border-bottom: 1px solid rgba(#6a696b, .3);
+    // border-bottom: 1px solid rgba(#6a696b, .3);
+    border-bottom: 1px solid rgba(#EFEFEF, .3);
     padding-bottom: 8rem;
     background: url("../img/symbols.png") right bottom no-repeat;
 }
@@ -68,13 +69,15 @@
     display: inline-block;
     vertical-align: top;
     font-size: 1.06rem;
-    color: #2b2a2c;
+    color: #ebe5e5;
+    // color: #2b2a2c;
     text-transform: uppercase;
     text-decoration: none;
     border: 1px solid #6a696b;
     border-radius: 1.8em;
     padding: 1.05em 1.7em;
-    background: none;
+    background: #2B2A2C;
+    // background: none;
     font-family: inherit;
     line-height: 1.1;
     cursor: pointer;
@@ -119,7 +122,9 @@
 
 .works__nav-link {
     margin: 0 1.2rem;
-    font-size: 0.8rem;
+    // font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: bold;
     color: rgba(#2b2a2c, .7);
     text-decoration: none;
     &:hover {
@@ -241,7 +246,8 @@
 .about__text {
     margin-bottom: 2.8rem;
     font-size: 1rem;
-    color: #6a696b;
+    // color: #6a696b;
+    color: #2B2A2C;
     line-height: 2;
     font-weight: 500;
 }

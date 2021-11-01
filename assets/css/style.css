@@ -362,8 +362,8 @@ body {
   background: -o-linear-gradient(135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
   height: 100%;
   color: #2b2a2c;
 }
@@ -580,7 +580,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid rgba(106, 105, 107, 0.3);
+  border-bottom: 1px solid rgba(239, 239, 239, 0.3);
   padding-bottom: 8rem;
   background: url("../img/symbols.png") right bottom no-repeat;
 }
@@ -656,13 +656,13 @@ p {
   display: inline-block;
   vertical-align: top;
   font-size: 1.06rem;
-  color: #2b2a2c;
+  color: #ebe5e5;
   text-transform: uppercase;
   text-decoration: none;
   border: 1px solid #6a696b;
   border-radius: 1.8em;
   padding: 1.05em 1.7em;
-  background: none;
+  background: #2B2A2C;
   font-family: inherit;
   line-height: 1.1;
   cursor: pointer;
@@ -719,7 +719,8 @@ p {
 
 .works__nav-link {
   margin: 0 1.2rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: bold;
   color: rgba(43, 42, 44, 0.7);
   text-decoration: none;
 }
@@ -861,7 +862,7 @@ p {
 .about__text {
   margin-bottom: 2.8rem;
   font-size: 1rem;
-  color: #6a696b;
+  color: #2B2A2C;
   line-height: 2;
   font-weight: 500;
 }
