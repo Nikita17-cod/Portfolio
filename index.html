@@ -28,18 +28,21 @@
                     </div>
                 </div>
                 <nav class="nav" id="menu">
-                    <a class="nav__link" href="#work">work</a>
-                    <a class="nav__link" href="#about">about me</a>
-                    <a class="nav__link" href="#rev">reviews</a>
-                    <!-- <a class="nav__link" href="#">contact</a> -->
-                    <a class="nav__link nav__link--btn" target="_blank" href="https://freelancehunt.com/freelancer/Nikita1711.html">freelance</a>
+                    <nav class="menu-prev">
+                        <a class="nav__link" href="#work">work</a>
+                        <a class="nav__link" href="#about">about me</a>
+                        <a class="nav__link" href="#rev">reviews</a>
+                    </nav>
+                    <a class="nav__link nav__link--btn" target="blank" href="https://freelancehunt.com/freelancer/Nikita1711.html">freelance</a>
                 </nav>
+
                 <div class="burger">
                     <img class="burger__icon" src="assets/img/burger.png" alt="burger">
                 </div>
             </div>
         </div>
     </header>
+
     <section class="intro" id="contact">
         <div class="container">
             <div class="intro__inner">
@@ -214,7 +217,8 @@
                     <div class="swiper-slide">
                         <div class="reviews__item" title="Все отзывы взяты с профиля Freelancehunt">
                             <div class="reviews__text">
-                                <p>Прекрасный исполнитель. Быстро, качественно, недорого и ответственно!<br>Очень рекомендую!</p>
+                                <p>Прекрасный исполнитель. Быстро, качественно, недорого и ответственно!<br>Очень рекомендую!
+                                </p>
                             </div>
                             <div class="reviews__author">
                                 <img class="reviews__photo" src="assets/img/ferdi.png" alt="author">
@@ -931,7 +935,7 @@
             <button type="button" class="modal__close" data-close>
                 <img src="assets/img/close.png" width="34" height="34" alt="close">
             </button>
-            <div class="contanct">
+            <!-- <div class="contanct">
                 <div class="contact__left">
                     <h3 class="modal__title mb-0">LET'S TALK!</h3>
                     <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
@@ -940,23 +944,29 @@
                             <img class="contact__info-icon" src="assets/img/phone.svg" alt="phone"> +38 (067) 735-67-53
                         </li>
                         <li class="contact__info-item">
-                            <img class="contact__info-icon" src="assets/img/mail.svg" alt="mail"> nikitakoshik064@gmail.com
+                            <img class="contact__info-icon" src="assets/img/mail.svg" alt="mail">
+                            nikitakoshik064@gmail.com
                         </li>
                     </ul>
                     <form class="form" action="assets/php/send.php" method="POST">
                         <div class="form__group">
                             <label for="input-email" class="form__label">Adress e-mail</label>
-                            <input id="input-email" name="email" type="text" class="form__input" placeholder="example@gmail.com" required>
+                            <input id="input-email" name="email" type="text" class="form__input"
+                                placeholder="example@gmail.com" required>
                         </div>
                         <div class="form__group">
                             <label for="input-email" class="form__label">Request</label>
-                            <textarea class="form__textarea" name="req" id="input-text" placeholder="Type your request..." required></textarea>
+                            <textarea class="form__textarea" name="req" id="input-text"
+                                placeholder="Type your request..." required></textarea>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn">SEND</button>
                         </div>
+                    </form>
                 </div>
-                </form>
+            </div> -->
+            <div class="soon">
+                <p>В скором времени будет доступно</p>
             </div>
         </div>
     </div>
