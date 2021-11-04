@@ -103,4 +103,13 @@ $(function() {
             $('body,html').animate({ scrollTop: top }, 1500);
         });
     });
+
+    const navToggle = $("#navToggle");
+    const nav = $(".nav");
+
+    navToggle.on("click", function(event) {
+        event.preventDefault();
+        nav.toggleClass("show");
+    });
+
 });

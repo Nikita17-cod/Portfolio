@@ -17,6 +17,11 @@
 }
 
 @media (max-width: 991px) {
+    .modal-work {
+        &__content {
+            padding-right: 3.5rem;
+        }
+    }
     .intro__photo {
         width: 350px;
     }
@@ -24,6 +29,7 @@
         padding-top: 5rem;
         padding-bottom: 3rem;
         background-size: 415px auto;
+        // justify-content: space-around
     }
     .intro__subtitle {
         font-size: 1.5rem;
@@ -36,13 +42,34 @@
         font-size: 1rem;
         padding: 1rem 1.05rem;
     }
+    .footer__nav {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 871px) {
+    .modal-work {
+        &__text {
+            margin-bottom: 0;
+        }
+        &__content {
+            padding: 2.4rem 3rem 0.5rem 1rem;
+        }
+        &__title {
+            font-size: 1.7rem;
+        }
+        &__info {
+            font-size: 1rem;
+            &-divider {
+                margin: 0 .4rem;
+            }
+        }
+    }
     // .footer__inner {
     //     text-align: center;
     // }
     .footer__nav {
+        align-items: baseline;
         flex-wrap: wrap;
     }
     .footer__nav,
@@ -50,9 +77,9 @@
         justify-content: center;
         width: 100%;
     }
-    .footer__credits {
-        margin-bottom: 1rem;
-    }
+    // .footer__credits {
+    //     margin-bottom: 1rem;
+    // }
     .footer__nav-link {
         margin: 0 0.5rem 1rem;
     }
@@ -61,11 +88,92 @@
             margin: 0 .5rem;
         }
     }
+    .work__title {
+        font-size: 0.9rem;
+    }
+    .work__cat {
+        font-size: 0.7rem;
+    }
+    .reviews__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviews__text {
+        width: 700px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .modal-work {
+        &__preview {
+            min-height: auto;
+        }
+        &__text {
+            margin-bottom: 3.5rem;
+            font-size: 0.82rem;
+        }
+        &__content {
+            padding: 2.4rem 3rem 0.5rem 1rem;
+        }
+        &__title {
+            font-size: 1.3rem;
+        }
+        &__info {
+            font-size: 0.85rem;
+            &-divider {
+                margin: 0 .4rem;
+            }
+        }
+        &__client {
+            &-title {
+                font-size: 0.9rem;
+            }
+            &-name {
+                font-size: 0.8rem;
+                margin-bottom: 1.25rem;
+            }
+        }
+        &__header {
+            margin-bottom: 1.25rem;
+        }
+    }
 }
 
 @media (max-width: 767px) {
+    .header {
+        position: fixed;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    .work {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+    .intro {
+        margin-top: 90px;
+    }
     .nav {
         display: none;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 999;
+        background-color: #fff;
+        box-shadow: 0 16px 18px rgba(0, 0, 0, .3);
+        text-align: center;
+        flex-direction: column;
+        &.show {
+            display: flex;
+        }
     }
     .burger {
         display: block;
@@ -78,19 +186,63 @@
         padding: 0.9rem 0.5rem;
     }
     .intro__photo {
-        width: 250px;
+        display: none;
     }
     .intro__inner {
         padding-top: 2rem;
         padding-bottom: 3rem;
-        background-size: 325px auto;
+        // background-size: 325px auto;
+        background: none;
     }
     .intro__content {
-        width: 60%;
+        // display: flex;
+        text-align: center;
+        width: 100%;
+    }
+    .social {
+        justify-content: center;
+    }
+    // .reviews__item {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    .reviews__text {
+        width: 600px;
+    }
+    .add {
+        margin-bottom: 1rem;
+    }
+    .nav__link::after {
+        content: none;
+    }
+    .nav__link {
+        width: 100%;
+        margin-left: 0;
+        padding: .5rem 1rem;
     }
 }
 
 @media (max-width: 675px) {
+    .modal__close-img {
+        width: 27px;
+        height: 27px;
+    }
+    .modal-work {
+        &__text {
+            margin-bottom: 0;
+        }
+        &__footer {
+            display: none;
+        }
+        &__preview {
+            display: none;
+        }
+        &__content {
+            width: 100%;
+            padding: 1.7rem;
+        }
+    }
     .intro__photo {
         display: none;
     }
@@ -104,9 +256,24 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    .reviews__text {
+        width: 490px;
+    }
+    .works {
+        margin: 2rem 0;
+        &__nav {
+            margin-bottom: 1rem;
+            &-link {
+                font-size: 0.8rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 565px) {
+    .works__nav-link {
+        margin: 0.65rem;
+    }
     .portfolio__col {
         flex-basis: 100%;
     }
@@ -145,11 +312,23 @@
     .about__img {
         width: 100%;
     }
+    .about__inner {
+        padding-top: 0;
+    }
+    .reviews__text {
+        width: 370px;
+    }
 }
 
 @media (max-width: 472px) {
+    .works {
+        margin: 1rem 0;
+    }
     .footer__credits {
         flex-direction: column;
+    }
+    #footer__nav {
+        margin-bottom: 1rem;
     }
     .footer__copyright {
         border-right: 0;
@@ -162,6 +341,28 @@
         +.btn {
             margin-left: 0;
             margin-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+    .footer__nav-link {
+        margin-right: 0.3rem;
+        margin-left: 0.3rem;
+    }
+    .modal-work {
+        &__title {
+            font-size: 1.1rem;
+        }
+        &__info {
+            font-size: 0.75rem;
+            &-divider {
+                margin: 0 .25rem;
+            }
         }
     }
 }
