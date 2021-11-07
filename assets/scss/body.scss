@@ -146,11 +146,9 @@
 
 .work {
     overflow: hidden;
-    box-shadow: 0 0 4px rgba(#000, 25%);
-    border-radius: 10px;
-    transition: box-shadow .2s linear;
+    transition: all.5s;
     &:hover {
-        box-shadow: 0 0 25px rgba(#000, 24%);
+        transform: scale(1.1);
     }
 }
 
@@ -162,8 +160,9 @@
 
 .work__content {
     padding: 1rem 0.8rem;
-    background-color: #ebe5e5;
-    border-top: 2px solid #c0baba;
+    background-color: #d1caca;
+    // background-color: #ebe5e5;
+    // border-top: 2px solid #c0baba;
 }
 
 .work__cat {

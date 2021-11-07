@@ -251,6 +251,7 @@
 }
 
 .progress-bar {
+    width: 13.5rem;
     display: flex;
     margin-bottom: 2.6rem;
     flex-direction: column;
@@ -265,6 +266,7 @@
     margin-bottom: 0.4rem;
     align-items: center;
     display: flex;
+    justify-content: space-between
 }
 
 .progress-bar__bar {
