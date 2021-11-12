@@ -603,6 +603,32 @@ p {
   background: url("../img/symbols.png") right bottom no-repeat;
 }
 
+.intro__choice {
+  margin-top: 2rem;
+}
+
+.intro__choice-white, .intro__choice-gradient {
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  border-radius: 1.8em;
+  padding: 0.4rem 0.9rem;
+  border: 1.7px solid #2B2A2C;
+}
+
+.intro__choice-white:hover, .intro__choice-gradient:hover {
+  cursor: pointer;
+}
+
+.intro__choice-white {
+  background-color: #fff;
+}
+
+.intro__choice-gradient {
+  margin-left: 0.5rem;
+  background: -o-linear-gradient(135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
 .intro__phone {
   color: #2B2A2C;
   text-decoration: none;
@@ -1226,7 +1252,7 @@ p {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 45%;
+  top: 44%;
   left: 50%;
   z-index: 1px;
   -webkit-transform: translate3d(-50%, -50%, 0);
@@ -1615,6 +1641,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
+  padding-bottom: 0.65rem;
   margin: 0;
   list-style: none;
   position: absolute;
@@ -2113,6 +2140,9 @@ p {
 }
 
 @media (max-width: 375px) {
+  .intro__choice {
+    margin-top: 1.5rem;
+  }
   .reviews__text {
     width: 275px;
   }

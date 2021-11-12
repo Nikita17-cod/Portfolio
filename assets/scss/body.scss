@@ -8,6 +8,28 @@
     background: url("../img/symbols.png") right bottom no-repeat;
 }
 
+.intro__choice {
+    margin-top: 2rem;
+    &-white,
+    &-gradient {
+        font-size: 0.9rem !important;
+        font-weight: 600;
+        border-radius: 1.8em;
+        padding: 0.4rem 0.9rem;
+        border: 1.7px solid #2B2A2C;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &-white {
+        background-color: #fff;
+    }
+    &-gradient {
+        margin-left: 0.5rem;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    }
+}
+
 .intro__phone {
     color: #2B2A2C;
     text-decoration: none;
@@ -145,6 +167,7 @@
 }
 
 .work {
+    // box-shadow: 2px 2px 10px rgba(#000, 24%);
     overflow: hidden;
     transition: all.5s;
     &:hover {
