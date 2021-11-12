@@ -177,12 +177,11 @@ $(function() {
             $('body').css('background', 'linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)');
             $('body').css('background-size', '400% 400%');
             $('body').css('animation', 'gradient 10s ease infinite');
-            // $('.work').css('border', 'none');
+            $('.work').css('box-shadow', 'none');
 
         })
         $('#white').click(function() {
-            // $('.work').css('border', '1px solid #000');
-            $('.work').css('box-shadow', '2px 2px 10px rgba(#000, 24%)');
+            $('.work').css('box-shadow', '2px 2px 15px #000');
             $('body').css('background', '#fff');
 
         })

@@ -627,6 +627,9 @@ p {
   margin-left: 0.5rem;
   background: -o-linear-gradient(135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
 }
 
 .intro__phone {
@@ -1478,7 +1481,7 @@ p {
 }
 
 .progress-bar {
-  width: 13.5rem;
+  width: 14rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2159,5 +2162,8 @@ p {
   .progress-bar__title {
     font-size: 0.8rem;
     font-weight: 300;
+  }
+  .progress-bar__right {
+    padding-left: 0.35rem;
   }
 }
