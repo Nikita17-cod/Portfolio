@@ -422,6 +422,16 @@ p {
   margin-bottom: 0 !important;
 }
 
+.scrollprogress-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 0.5rem;
+  width: 0%;
+  background: #fffb01;
+  z-index: 9999;
+}
+
 .hide {
   display: none;
 }
