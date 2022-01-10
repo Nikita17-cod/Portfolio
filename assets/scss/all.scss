@@ -7,6 +7,19 @@ body *::selection {
     color: #2B2A2C;
 }
 
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #2B2A2C;
+    border-radius: 0px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #efefef;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
