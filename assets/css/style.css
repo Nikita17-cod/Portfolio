@@ -514,6 +514,237 @@ p {
   height: 100%;
 }
 
+.robots {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.android {
+  position: relative;
+}
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg {
+  background-color: #2B2A2C;
+}
+
+.head {
+  width: 200px;
+  margin: 0 auto;
+  height: 137px;
+  border-radius: 200px 200px 0 0;
+  margin-bottom: 10px;
+}
+
+.head:hover {
+  width: 300px;
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.head:hover .right_eye,
+.head:hover .left_eye {
+  -webkit-box-shadow: inset 5px 0 5px #A0CF4C;
+          box-shadow: inset 5px 0 5px #A0CF4C;
+}
+
+.head:hover .mouth {
+  display: block;
+}
+
+.eyes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left_eye,
+.right_eye {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.left_eye {
+  /* These properties are new and you haven't encountered
+      in this course. Check out CSS Tricks to see what it does! */
+  position: relative;
+  top: 90px;
+  left: 40px;
+}
+
+.right_eye {
+  position: relative;
+  top: 90px;
+  left: 120px;
+}
+
+.mouth {
+  background-color: white;
+  width: 20px;
+  height: 1px;
+  position: relative;
+  top: 130px;
+  left: 48px;
+  display: none;
+}
+
+.upper_body {
+  width: 300px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left_arm,
+.right_arm {
+  width: 40px;
+  height: 125px;
+  border-radius: 100px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.left_arm {
+  margin-right: 10px;
+}
+
+.left_arm:hover {
+  -webkit-transform: translate(0, -50%) scale(1.2);
+  -ms-transform: translate(0, -50%) scale(1.2);
+  transform: translate(0, -50%) scale(1.2);
+}
+
+.right_arm {
+  margin-left: 10px;
+}
+
+.right_arm:hover {
+  -webkit-transform: translate(0, -50%) scale(1.2);
+  -ms-transform: translate(0, -50%) scale(1.2);
+  transform: translate(0, -50%) scale(1.2);
+}
+
+.torso {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 0 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.energy_ball {
+  border-radius: 50%;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 50px;
+  -webkit-box-shadow: 0 0 20px #fff, 10px 0 40px #A0CF4C, -10px 0 40px #A0CF4C;
+          box-shadow: 0 0 20px #fff, 10px 0 40px #A0CF4C, -10px 0 40px #A0CF4C;
+}
+
+.torso:hover .energy_ball {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.lower_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 122px;
+  /* This is another useful property. Hmm what do you think it does?*/
+  margin: 0 auto;
+}
+
+.left_leg,
+.right_leg {
+  width: 40px;
+  height: 120px;
+  border-radius: 0 0 100px 100px;
+}
+
+.left_leg {
+  margin-left: 45px;
+}
+
+.left_leg:hover {
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.right_leg {
+  margin-left: 30px;
+}
+
+.right_leg:hover {
+  -webkit-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.left_arm_a {
+  cursor: default;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    -webkit-box-shadow: 0 0 20px #fff, 10px 0 40px #4792C5, -10px 0 40px #7D74AC;
+            box-shadow: 0 0 20px #fff, 10px 0 40px #4792C5, -10px 0 40px #7D74AC;
+  }
+  30% {
+    -webkit-box-shadow: 0 0 40px #fff, 10px 0 60px #A85F9B, -10px 0 60px #A0CF4C;
+            box-shadow: 0 0 40px #fff, 10px 0 60px #A85F9B, -10px 0 60px #A0CF4C;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 60px #fff, 10px 0 80px #4195C7, -10px 0 80px #28A4D3, inset -10px 0 40px #EA536D;
+            box-shadow: 0 0 60px #fff, 10px 0 80px #4195C7, -10px 0 80px #28A4D3, inset -10px 0 40px #EA536D;
+  }
+}
+
+@keyframes glow {
+  0% {
+    -webkit-box-shadow: 0 0 20px #fff, 10px 0 40px #4792C5, -10px 0 40px #7D74AC;
+            box-shadow: 0 0 20px #fff, 10px 0 40px #4792C5, -10px 0 40px #7D74AC;
+  }
+  30% {
+    -webkit-box-shadow: 0 0 40px #fff, 10px 0 60px #A85F9B, -10px 0 60px #A0CF4C;
+            box-shadow: 0 0 40px #fff, 10px 0 60px #A85F9B, -10px 0 60px #A0CF4C;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 60px #fff, 10px 0 80px #4195C7, -10px 0 80px #28A4D3, inset -10px 0 40px #EA536D;
+            box-shadow: 0 0 60px #fff, 10px 0 80px #4195C7, -10px 0 80px #28A4D3, inset -10px 0 40px #EA536D;
+  }
+}
+
+.snow_hat {
+  position: absolute;
+  left: 9px;
+  top: -110px;
+  width: 22.5rem;
+  height: 13rem;
+}
+
 .header {
   padding: 1.2rem 0;
   position: relative;
@@ -623,7 +854,6 @@ p {
   display: flex;
   border-bottom: 1px solid rgba(239, 239, 239, 0.3);
   padding-bottom: 8rem;
-  background: url("../img/symbols.png") right bottom no-repeat;
 }
 
 .intro__choice {
@@ -1726,6 +1956,30 @@ p {
   .modal-work__content {
     padding-right: 3.5rem;
   }
+  .head {
+    width: 177px;
+    margin-bottom: 6px;
+  }
+  .left_eye {
+    left: 35px;
+  }
+  .right_eye {
+    left: 105px;
+  }
+  .left_arm {
+    margin-right: 6px;
+  }
+  .snow_hat {
+    left: -1px;
+    top: -110px;
+    width: 21.5rem;
+  }
+  .right_arm {
+    margin-left: 6px;
+  }
+  .upper_body {
+    width: 270px;
+  }
   .intro__photo {
     width: 350px;
   }
@@ -1900,6 +2154,9 @@ p {
   .btn {
     font-size: 0.8rem;
     padding: 0.9rem 0.5rem;
+  }
+  .robots {
+    display: none;
   }
   .intro__photo {
     display: none;
