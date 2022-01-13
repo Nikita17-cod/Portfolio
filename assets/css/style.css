@@ -834,14 +834,6 @@ p {
   }
 }
 
-.snow_hat {
-  position: absolute;
-  left: 9px;
-  top: -110px;
-  width: 22.5rem;
-  height: 13rem;
-}
-
 .header {
   padding: 1.2rem 0;
   position: relative;
