@@ -439,9 +439,10 @@ p {
   position: fixed;
   left: 0;
   top: 0;
-  height: 0.5rem;
+  height: 1rem;
   width: 0%;
-  background: #fffb01;
+  opacity: .6;
+  background: #2B2A2C;
   z-index: 9999;
 }
 
@@ -834,6 +835,195 @@ p {
   }
 }
 
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: rotation 10s infinite alternate;
+          animation: rotation 10s infinite alternate;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(60deg);
+            transform: rotateY(720deg) rotateX(60deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateX(60deg);
+            transform: rotateY(720deg) rotateX(60deg);
+  }
+}
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.cube__face--left {
+  background-image: url("https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464");
+  -webkit-transform: translateX(-100px) rotateY(90deg);
+          transform: translateX(-100px) rotateY(90deg);
+}
+
+.cube__face--right {
+  background-image: url("https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464");
+  -webkit-transform: translateX(100px) rotateY(90deg);
+          transform: translateX(100px) rotateY(90deg);
+}
+
+.cube__face--bottom {
+  background-image: url("https://uploaddeimagens.com.br/images/000/955/231/full/bottom.jpg?1497835434");
+  -webkit-transform: translateY(100px) rotateX(90deg);
+          transform: translateY(100px) rotateX(90deg);
+}
+
+.cube__face--top {
+  background-image: url("https://uploaddeimagens.com.br/images/000/955/233/thumb/top.jpg?1497835487");
+  -webkit-transform: translateY(-100px) rotateX(90deg);
+          transform: translateY(-100px) rotateX(90deg);
+}
+
+.cube__face--back {
+  background-image: url("https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464");
+  -webkit-transform: translateZ(-100px);
+          transform: translateZ(-100px);
+}
+
+.cube__face--front {
+  background-image: url("https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464");
+  -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
+}
+
+.love {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  top: 200px;
+  left: 190px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+.love:after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.7);
+  -webkit-transform: translateX(37px) translateY(80px) rotateX(90deg);
+          transform: translateX(37px) translateY(80px) rotateX(90deg);
+}
+
+.heart {
+  position: absolute;
+  width: 100px;
+  height: 90px;
+}
+
+.heart:before, .heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+.heart.dark {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.heart.bright {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.heart.dark:before, .heart.dark:after {
+  background: #cc0000;
+}
+
+.heart.bright:before, .heart.bright:after {
+  background: #f3002a;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
 .header {
   padding: 1.2rem 0;
   position: relative;
@@ -1206,17 +1396,6 @@ p {
   position: absolute;
   bottom: 0;
   z-index: 2;
-}
-
-.about__photo:before {
-  content: "";
-  width: 413px;
-  height: 413px;
-  background-color: #efefef;
-  position: absolute;
-  left: 1rem;
-  bottom: 24rem;
-  z-index: 1;
 }
 
 .about__title {

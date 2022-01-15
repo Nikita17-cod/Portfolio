@@ -89,9 +89,10 @@ p {
     position: fixed;
     left: 0;
     top: 0;
-    height: 0.5rem; // Высота линии, можно менять/подбирать
+    height: 1rem; // Высота линии, можно менять/подбирать
     width: 0%;
-    background: #fffb01; // Цвет линии, можете заменить на HEX.
+    opacity: .6;
+    background: #2B2A2C; // Цвет линии, можете заменить на HEX.
     z-index: 9999;
 }
 
@@ -425,5 +426,142 @@ p {
     }
     100% {
         box-shadow: 0 0 60px #fff, 10px 0 80px #4195C7, -10px 0 80px #28A4D3, inset -10px 0 40px #EA536D;
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotation 10s infinite alternate;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    100% {
+        transform: rotateY(720deg) rotateX(60deg);
+    }
+}
+
+.cube__face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.cube__face--left {
+    background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
+    transform: translateX(-100px) rotateY(90deg);
+}
+
+.cube__face--right {
+    background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
+    transform: translateX(100px) rotateY(90deg);
+}
+
+.cube__face--bottom {
+    background-image: url('https://uploaddeimagens.com.br/images/000/955/231/full/bottom.jpg?1497835434');
+    transform: translateY(100px) rotateX(90deg);
+}
+
+.cube__face--top {
+    background-image: url('https://uploaddeimagens.com.br/images/000/955/233/thumb/top.jpg?1497835487');
+    transform: translateY(-100px) rotateX(90deg);
+}
+
+.cube__face--back {
+    background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
+    transform: translateZ(-100px);
+}
+
+.cube__face--front {
+    background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
+    transform: translateZ(100px);
+}
+
+.love {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    top: 200px;
+    left: 190px;
+    transform-style: preserve-3d;
+    animation: spin 2s linear infinite;
+    // Shadow
+    &:after {
+        content: "";
+        position: absolute;
+        background: rgba(#000, .4);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        box-shadow: 0 0 40px 5px rgba(#000, .7);
+        transform: translateX(37px) translateY(80px) rotateX(90deg);
+    }
+}
+
+.heart {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    // Halves
+    &:before,
+    &:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+    }
+    &:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+    }
+    &.dark {
+        transform: rotateY(0);
+    }
+    &.bright {
+        transform: rotateY(90deg);
+    }
+    &.dark:before,
+    &.dark:after {
+        background: darken(red, 10%);
+    }
+    &.bright:before,
+    &.bright:after {
+        background: darken(pink, 40%);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotateY(360deg);
     }
 }
