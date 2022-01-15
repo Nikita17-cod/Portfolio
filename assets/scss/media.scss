@@ -492,6 +492,30 @@
 }
 
 @media (max-width: 375px) {
+    .burger {
+        width: 38px;
+    }
+    #nav-icon2 span:nth-child(5),
+    #nav-icon2 span:nth-child(6) {
+        top: 32px;
+    }
+    #nav-icon2 span:nth-child(1),
+    #nav-icon2 span:nth-child(2) {
+        top: 4px;
+    }
+    #nav-icon2 span {
+        height: 4.5px;
+    }
+    #nav-icon2 {
+        height: 46px;
+    }
+    #nav-icon2.open span:nth-child(1) {
+        left: 2px;
+        top: 13px;
+    }
+    #nav-icon2.open span:nth-child(2) {
+        top: 13px;
+    }
     .intro__choice {
         margin-top: 1.5rem;
     }
