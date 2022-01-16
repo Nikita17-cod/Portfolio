@@ -1,4 +1,7 @@
 @media (max-width: 1199px) {
+    .intro__photo-img {
+        width: 35rem;
+    }
     .about__content {
         width: 100%;
     }
@@ -17,6 +20,10 @@
 }
 
 @media (max-width: 991px) {
+    .intro__photo-img {
+        width: 30rem;
+        padding-right: 2rem;
+    }
     .btn--thin {
         font-size: 0.85rem !important;
     }
@@ -133,6 +140,9 @@
 }
 
 @media (max-width: 800px) {
+    .intro__photo-img {
+        width: 27rem;
+    }
     .modal__content {
         padding: 4rem 1rem;
     }

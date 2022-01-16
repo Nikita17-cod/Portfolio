@@ -1200,11 +1200,9 @@ p {
   color: rgba(43, 42, 44, 0.7);
 }
 
-.intro__photo {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+.intro__photo-img {
+  width: 40rem;
+  height: auto;
 }
 
 .social {
@@ -2204,6 +2202,9 @@ p {
 }
 
 @media (max-width: 1199px) {
+  .intro__photo-img {
+    width: 35rem;
+  }
   .about__content {
     width: 100%;
   }
@@ -2222,6 +2223,10 @@ p {
 }
 
 @media (max-width: 991px) {
+  .intro__photo-img {
+    width: 30rem;
+    padding-right: 2rem;
+  }
   .btn--thin {
     font-size: 0.85rem !important;
   }
@@ -2337,6 +2342,9 @@ p {
 }
 
 @media (max-width: 800px) {
+  .intro__photo-img {
+    width: 27rem;
+  }
   .modal__content {
     padding: 4rem 1rem;
   }
