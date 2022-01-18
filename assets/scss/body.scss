@@ -169,6 +169,9 @@
 }
 
 .work {
+    &:hover {
+        cursor: pointer;
+    }
     // box-shadow: 2px 2px 10px rgba(#000, 24%);
     overflow: hidden;
     transition: all.5s;

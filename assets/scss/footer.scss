@@ -1,61 +1,76 @@
-.footer {
-    background-color: #2B2A2C;
-    padding: 1.35rem 0;
-    margin-top: 3rem;
-}
-
-.footer__inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer__credits {
-    display: flex;
-    align-items: center;
-}
-
-.footer__nav {
-    align-items: center;
-    font-size: 0.94rem;
-    display: flex;
-}
-
-.footer__nav-link {
-    margin-left: 1.5rem;
-    color: #bbbbcc;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
+    .footer {
+        background-color: #2B2A2C;
+        padding: 1.35rem 0;
+        // margin-top: 3rem;
     }
-    &--btn {
-        text-transform: uppercase;
-        line-height: 1.1;
-        border: 1px solid #8D8D8E;
-        border-radius: 20px;
-        padding: 0.6rem 1.4rem;
+    
+    .footer__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .footer__credits {
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer__nav {
+        align-items: center;
+        font-size: 0.94rem;
+        display: flex;
+    }
+    
+    .footer__nav-link {
+        margin-left: 1.5rem;
+        color: #bbbbcc;
+        text-decoration: none;
         &:hover {
-            text-decoration: none;
-            background-color: #bbbbcc;
-            color: #2B2A2C;
-            border-color: #bbbbcc;
+            text-decoration: underline;
+        }
+        &--btn {
+            text-transform: uppercase;
+            line-height: 1.1;
+            border: 1px solid #8D8D8E;
+            border-radius: 20px;
+            padding: 0.6rem 1.4rem;
+            transition: background-color .2s linear, color .2s linear;
+            &:hover {
+                text-decoration: none;
+                background-color: #bbbbcc;
+                color: #2B2A2C;
+                border-color: #bbbbcc;
+            }
         }
     }
-}
-
-.footer__social {
-    display: flex;
-    align-items: center;
-    a {
-        margin-right: 1.2rem;
-        text-decoration: none;
+    
+    .footer__social {
+        display: flex;
+        align-items: center;
+        a {
+            margin-right: 1.2rem;
+            text-decoration: none;
+        }
     }
-}
-
-.footer__copyright {
-    padding-right: 0.8rem;
-    color: #8D8D8E;
-    font-size: 0.94rem;
-    border-right: 1px solid #3A393B;
-    margin-right: 1rem;
-}
+    
+    .footer__copyright {
+        padding-right: 0.8rem;
+        color: #8D8D8E;
+        font-size: 0.94rem;
+        border-right: 1px solid #3A393B;
+        margin-right: 1rem;
+    }
+    
+    .telegram,
+    .instagram,
+    .phone,
+    .git {
+        transition: transform .2s linear;
+    }
+    
+    .telegram:hover,
+    .instagram:hover,
+    .phone:hover,
+    .git:hover {
+        transform: translateY(-5px);
+    }

@@ -1335,6 +1335,10 @@ p {
 }
 
 .work:hover {
+  cursor: pointer;
+}
+
+.work:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -1632,7 +1636,6 @@ p {
 .footer {
   background-color: #2B2A2C;
   padding: 1.35rem 0;
-  margin-top: 3rem;
 }
 
 .footer__inner {
@@ -1681,6 +1684,9 @@ p {
   border: 1px solid #8D8D8E;
   border-radius: 20px;
   padding: 0.6rem 1.4rem;
+  -webkit-transition: background-color .2s linear, color .2s linear;
+  -o-transition: background-color .2s linear, color .2s linear;
+  transition: background-color .2s linear, color .2s linear;
 }
 
 .footer__nav-link--btn:hover {
@@ -1710,6 +1716,26 @@ p {
   font-size: 0.94rem;
   border-right: 1px solid #3A393B;
   margin-right: 1rem;
+}
+
+.telegram,
+.instagram,
+.phone,
+.git {
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  -o-transition: transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear;
+}
+
+.telegram:hover,
+.instagram:hover,
+.phone:hover,
+.git:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .modal {
@@ -2225,7 +2251,6 @@ p {
 @media (max-width: 991px) {
   .intro__photo-img {
     width: 30rem;
-    padding-right: 2rem;
   }
   .btn--thin {
     font-size: 0.85rem !important;
@@ -2257,9 +2282,6 @@ p {
   .upper_body {
     width: 270px;
   }
-  .intro__photo {
-    width: 350px;
-  }
   .intro__inner {
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -2282,6 +2304,9 @@ p {
 }
 
 @media (max-width: 871px) {
+  .intro__photo-img {
+    width: 26rem;
+  }
   .modal-work__text {
     margin-bottom: 0;
   }
@@ -2343,7 +2368,7 @@ p {
 
 @media (max-width: 800px) {
   .intro__photo-img {
-    width: 27rem;
+    width: 25rem;
   }
   .modal__content {
     padding: 4rem 1rem;
