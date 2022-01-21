@@ -172,20 +172,36 @@ $(function() {
 
 
 
-    $(document).ready(function() {
-        $('#gradient').click(function() {
+    // $(document).ready(function() {
+    //     $('#gradient').click(function() {
+    //         $('body').css('background', 'linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)');
+    //         $('body').css('background-size', '400% 400%');
+    //         $('body').css('animation', 'gradient 10s ease infinite');
+    //         $('.work').css('box-shadow', 'none');
+
+    //     })
+    //     $('#white').click(function() {
+    //         $('.work').css('box-shadow', '2px 2px 15px #000');
+    //         $('body').css('background', '#fff');
+
+    //     })
+    // });
+
+    const switchEl = document.getElementById('backgroundSwitcher');
+
+    const switchBackground = () => {
+        if (switchEl.checked) {
             $('body').css('background', 'linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)');
             $('body').css('background-size', '400% 400%');
             $('body').css('animation', 'gradient 10s ease infinite');
             $('.work').css('box-shadow', 'none');
-
-        })
-        $('#white').click(function() {
+        } else {
             $('.work').css('box-shadow', '2px 2px 15px #000');
             $('body').css('background', '#fff');
+        }
+    }
 
-        })
-    });
+    switchEl.addEventListener('change', switchBackground);
 
 });
 

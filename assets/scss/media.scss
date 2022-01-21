@@ -186,6 +186,10 @@
 }
 
 @media (max-width: 767px) {
+    .switch {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
     .header {
         position: fixed;
         background-color: #fff;
