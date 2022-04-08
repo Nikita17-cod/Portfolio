@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='freelancehunt' content='d56e7937bd2d34d'>
+    <link type="Image/x-icon" href="assets/img/fav.png" rel="icon">
+    <link rel="stylesheet" href="assets/css/sweetalert.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="scrollprogress-bar" id="progressBar"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div>
+                        <img class="user__avatar" src="assets/img/profile.png" alt="ava">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">Nikita<br>Koshyk</div>
+                        <div class="user__prof">Web Programmer</div>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <div class="add" id="menu-prev">
+                        <a class="nav__link" href="#work">work</a>
+                        <a class="nav__link" href="#about">about me</a>
+                        <a class="nav__link" href="#rev">reviews</a>
+                    </div>
+                    <a class="nav__link nav__link--btn" target="blank" href="https://freelancehunt.com/freelancer/Nikita1711.html">freelance</a>
+                    <label class="switch">
+                        <input type="checkbox" checked id="backgroundSwitcher">
+                        <span class="slider round"></span>
+                    </label>
+                </nav>
+
+                <button type="button" class="burger" id="navToggle">
+                    <div id="nav-icon2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    <!-- <img class="burger__icon" src="assets/img/burger.png" alt="burger"> -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro" id="contact">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello i'm</h2>
+                    <h1 class="intro__title">Nikita Koshyk</h1>
+                    <div class="intro__text">Web Programmer</div>
+                    <a class="intro__phone" href="tel:+380677356753">+38 (067) 735-67-53</a>
+                    <div class="social">
+                        <a target="_blank" href="https://t.me/nikitakoshyk" class="social__link">
+                            <img class="social__img" src="assets/img/telegramheader.svg" alt="telegram">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/_nikitakoshyk_/" class="social__link">
+                            <img class="social__img" src="assets/img/instagramheader.svg" alt="instagram">
+                        </a>
+                        <a href="tel:+380677356753" class="social__link">
+                            <img class="social__img" src="assets/img/phoneheader.svg" alt="phone">
+                        </a>
+                        <a target="_blank" href="https://github.com/Nikita17-cod" class="social__link">
+                            <img class="social__img" src="assets/img/githubheader.svg" alt="github">
+                        </a>
+                    </div>
+                    <button class="btn" type="button" data-modal="#modal_2">SEE MY RESUME</button>
+                    <a class="btn" target="_blank" href="https://freelancehunt.com/freelancer/Nikita1711.html" data-modal="#modal_3">hire me</a>
+                    <!-- <div class="intro__choice">
+                        <input class="intro__choice-white" title="Изменить цвет фона на white" value="White" type="button" id="white" />
+                        <input class="intro__choice-gradient" title="Изменить цвет фона на gradient" value="Gradient" type="button" id="gradient" />
+                    </div> -->
+
+                </div>
+                <div class="intro__photo">
+                    <img class="intro__photo-img" src="assets/img/mokap2.png" alt="img">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="works" id="work">
+        <div class="container">
+            <div class="works__nav">
+                <a class="works__nav-link" data-filter="all" href="#">All</a>
+                <a class="works__nav-link" data-filter="landing" href="#">Landing</a>
+                <a class="works__nav-link" data-filter="Bulletin" href="#">Bulletin Board</a>
+                <a class="works__nav-link" data-filter="Promo" href="#">Promo Sites</a>
+                <a class="works__nav-link" data-filter="business" href="#">Site Business Card</a>
+
+                <!-- <a class="works__nav-link" data-filter="soon" href="#">Online store</a> -->
+            </div>
+            <div class="portfolio" id="portfolio">
+                <div class="portfolio__col" data-cat="business">
+                    <div class="work" data-modal="#modal_project_8">
+                        <img class="work__img" src="assets/img/8.1.webp" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">SITE BUSINESS CARD</div>
+                            <div class="work__title">MyPet
+                                <time class="work__date" datetime="2021-07-07 11:16">27.07.2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="landing">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__img" src="assets/img/2.1.webp" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">LANDING PAGE</div>
+                            <div class="work__title">LUX
+                                <time class="work__date" datetime="2021-07-07 11:16">10.02.2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="landing">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img class="work__img" src="assets/img/1.1.webp" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">LANDING PAGE</div>
+                            <div class="work__title">AutoExpress
+                                <time class="work__date" datetime="2021-07-07 11:16">07.03.2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="landing">
+                    <div class="work" data-modal="#modal_project_3">
+                        <img class="work__img" src="assets/img/3.1.webp" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">LANDING PAGE</div>
+                            <div class="work__title">Konstruct
+                                <time class="work__date" datetime="2021-07-07 11:16">25.05.2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="Bulletin">
+                    <div class="work" data-modal="#modal_project_4">
+                        <img class="work__img" src="assets/img/4.1.webp" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">Bulletin board</div>
+                            <div class="work__title">КиноЗал
+                                <time class="work__date" datetime="2021-07-07 11:16">25.11.2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="landing">
+                    <div class="work" data-modal="#modal_project_5">
+                        <img class="work__img" src="assets/img/5.1.webp" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">Landing page</div>
+                            <div class="work__title">Grid-Template
+                                <time class="work__date" datetime="2021-07-07 11:16">14.10.2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="Promo">
+                    <div class="work" data-modal="#modal_project_6">
+                        <img class="work__img" src="assets/img/6.1.webp" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">PROMO SITES</div>
+                            <div class="work__title">HYPICONS
+                                <time class="work__date" datetime="2021-07-07 11:16">02.03.2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="Promo">
+                    <div class="work" data-modal="#modal_project_7">
+                        <img class="work__img" src="assets/img/7.1.webp" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">PROMO SITES</div>
+                            <div class="work__title">LUFT
+                                <time class="work__date" datetime="2021-07-07 11:16">06.01.2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-center">
+                <a href="#" class="btn btn--sm">LOAD MORE WORK</a>
+            </div>-->
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__photo">
+
+                    <div class="love">
+                        <div class="heart dark"></div>
+                        <div class="heart bright"></div>
+                    </div>
+                    <div class="scene">
+                        <div class="cube">
+                            <div class="cube__face cube__face--left"></div>
+                            <div class="cube__face cube__face--right"></div>
+                            <div class="cube__face cube__face--top"></div>
+                            <div class="cube__face cube__face--bottom"></div>
+                            <div class="cube__face cube__face--front"></div>
+                            <div class="cube__face cube__face--back"></div>
+                        </div>
+                    </div>
+                    <!-- <img class="img" src="assets/img/designer_photo.png" alt="i"> -->
+                </div>
+                <div class="about__content">
+                    <h3 class="about__title">ABOUT ME</h3>
+                    <h2 class="about__bigtitle">WHO AM I</h2>
+                    <div class="about__text">
+                        <p>Я - <b>Веб-программист</b>, занимаюсь разработкой сайтов различной степени сложности. Опыт более двух лет.</p>
+                        <p><b>Закончил курс Front-End!</b></p>
+                        <img class="img about__img" src="assets/img/front-end.jpg" alt="Front-End">
+                        <h5 class="about__specialization">Моя специализация:</h5>
+                        - <b>Front-end</b>;<br> - <b>HTML5</b>, <b>CSS3</b> (Less, Sass), Bootstrap, jQuery, JavaScript, Gulp;
+                        <br> - <b>вёрстка лендинга</b>;<br>-
+                        <b>разработка новых и доработка старых сайтов</b>;
+                        <br> - вёрстка многостраничного сайта;<br> - всегда <b>использую методологию БЭМ</b>;<br> - вёрстка интернет-магазина;<br> - <b>адаптация сайта под любые размеры устройств</b>;<br> -
+                        <b>кросс-браузерная верстка</b>.
+                        <h5 class="about__specialization">Работаю с макетами в:</h5>
+                        - Figma<br> - Adobe Photoshop<br> - Adobe XD и т.д.<br>
+
+                    </div>
+                    <a class="btn" target="_blank" href="https://freelancehunt.com/freelancer/Nikita1711.html">freelance</a>
+                    <button class="btn" type="button" data-modal="#modal_2">SEE MY RESUME</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="reviews" id="rev">
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- style="height: 400px;" -->
+                    <div class="swiper-slide">
+                        <div class="reviews__item" title="Все отзывы взяты с профиля Freelancehunt">
+                            <div class="reviews__text">
+                                <p>Прекрасный исполнитель. Быстро, качественно, недорого и ответственно!<br>Очень рекомендую!
+                                </p>
+                            </div>
+                            <div class="reviews__author">
+                                <img class="reviews__photo" src="assets/img/ferdi.png" alt="author">
+                                <div class="reviews__name">Анна Смыкова</div>
+                                <div class="reviews__company">Customer</div>
+                                <div class="reviews__rating">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <!-- <img class="reviews__star--unactive" src="assets/img/star.png" width="13px" height="13px" alt="star"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__item" title="Все отзывы взяты с профиля Freelancehunt">
+                            <div class="reviews__text">
+                                <p>Работали с Никитой впервые, но результатом остался доволен. Очень качественно выполнил довольно объемный проект по созданию сайта в весьма ограниченные сроки, за что ему, однозначно, огромное спасибо! Нежелания сделать,
+                                    казалось бы, лишнюю, или ненужную в его глазах, но важную для меня работу не было. И именно это умение объяснить и даже наглядно показать мне - заказчику, как можно сделать лучше, бесспорно, заслуживает уважения. Искренне
+                                    надеюсь, что ещё сработаемся.</p>
+                            </div>
+                            <div class="reviews__author">
+                                <img class="reviews__photo" src="assets/img/babayaga0000042.png" alt="author">
+                                <div class="reviews__name">Oleg NL</div>
+                                <div class="reviews__company">Customer</div>
+                                <div class="reviews__rating">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <!-- <img class="reviews__star--unactive" src="assets/img/star.png" width="13px" height="13px" alt="star"> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__item" title="Этот отзыв взят с профиля Freelance.ua">
+                            <div class="reviews__text">
+                                <p>Ответственный, последовательный, коммуникабельный разработчик.<br>Рекомендую</p>
+                            </div>
+                            <div class="reviews__author">
+                                <img class="reviews__photo" src="assets/img/ferdi.png" alt="author">
+                                <div class="reviews__name">Bohdan</div>
+                                <div class="reviews__company">Customer</div>
+                                <div class="reviews__rating">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <!-- <img class="reviews__star--unactive" src="assets/img/star.png" width="13px" height="13px" alt="star"> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__item" title="Этот отзыв взят с профиля Freelance.ua">
+                            <div class="reviews__text">
+                                <p>Быстро, качественно, без предоплат. Работать можно без проблем.<br>Рекомендую!</p>
+                            </div>
+                            <div class="reviews__author">
+                                <img class="reviews__photo" src="assets/img/ferdi.png" alt="author">
+                                <div class="reviews__name">Спартак</div>
+                                <div class="reviews__company">Customer</div>
+                                <div class="reviews__rating">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <img class="reviews__star" src="assets/img/star.png" width="13px" height="13px" alt="star">
+                                    <!-- <img class="reviews__star--unactive" src="assets/img/star.png" width="13px" height="13px" alt="star"> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__credits">
+                    <div class="footer__copyright">
+                        Copyright &copy; Nikita Koshyk 2022
+                    </div>
+                    <div class="footer__social">
+                        <a href="https://t.me/nikitakoshyk" target="_blank">
+                            <img class="telegram" src="assets/img/telegram.svg" width="24px" alt="telegram">
+                        </a>
+                        <a href="https://www.instagram.com/_nikitakoshyk_/" target="_blank">
+                            <img class="instagram" src="assets/img/instagram.svg" width="24px" alt="instagram">
+                        </a>
+                        <a href="tel:+38067735653">
+                            <img class="phone" src="assets/img/viber.svg" width="24px" alt="viber">
+                        </a>
+                        <a href="https://github.com/Nikita17-cod" target="_blank">
+                            <img class="git" src="assets/img/github.svg" width="24px" alt="github">
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer__nav">
+                    <nav id="footer__nav">
+                        <a class="footer__nav-link" href="#work">Work</a>
+                        <a class="footer__nav-link" href="#about">About me</a>
+                        <a class="footer__nav-link" href="#rev">Reviews</a>
+                        <a class="footer__nav-link" href="#contact">Contact</a>
+                    </nav>
+                    <a class="footer__nav-link footer__nav-link--btn" target="_blank" href="https://freelancehunt.com/freelancer/Nikita1711.html ">freelance</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo img" src="assets/img/2.1.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo img" src="assets/img/2.2.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/2.3.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/2.4.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/2.5.webp" alt="prev">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">LUX</h3>
+                        <div class="modal-work__info">
+                            LANDING PAGE<span class="modal-work__info-divider">|</span> 10.02.2021
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">client:</div>
+                        <div class="modal-work__client-name">none</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Сайт верстался для практики по готовому макету. Присутствует несколько каруселей, красивые hover эффекты и хорошая адаптация.</p>
+                        <a target="_blank" href="https://nikita17-cod.github.io/car-sharing/">https://nikita17-cod.github.io/car-sharing/</a>
+
+                    </div>
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev"><img class="modal-work__btn--prev"
+                                src="assets/img/left.png" height="11" alt="prev">Previous</button>
+                        <button type="button" class="modal-work__btn slickNext">Next<img class="modal-work__btn--next"
+                                src="assets/img/right.png" height="11" alt="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/1.1.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/1.2.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/1.3.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/1.4.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/1.5.webp" alt="prev">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">AutoExpress</h3>
+                        <div class="modal-work__info">
+                            LANDING PAGE<span class="modal-work__info-divider">|</span> 07.03.2021
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">client:</div>
+                        <div class="modal-work__client-name">none</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Сайт с красивым дизайном верстался для практики по готовому макету. Присутствует несколько каруселей, красивые hover эфекты и хорошая адаптация.</p>
+                        <a target="_blank" href="https://nikita17-cod.github.io/autoexpress/">https://nikita17-cod.github.io/autoexpress/</a>
+
+                    </div>
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev"><img class="modal-work__btn--prev"
+                                src="assets/img/left.png" height="11" alt="prev">Previous</button>
+                        <button type="button" class="modal-work__btn slickNext">Next<img class="modal-work__btn--next"
+                                src="assets/img/right.png" height="11" alt="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_3">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/3.1.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/3.2.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/3.3.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/3.4.webp" alt="prev">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Konstruct</h3>
+                        <div class="modal-work__info">
+                            LANDING PAGE<span class="modal-work__info-divider">|</span> 25.05.2021
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">client:</div>
+                        <div class="modal-work__client-name">none</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Обычный лендинг, был свёрстан на скорую руку</p>
+                        <a target="_blank" href="https://nikita17-cod.github.io/konstruct/">https://nikita17-cod.github.io/konstruct/</a>
+
+                    </div>
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev"><img class="modal-work__btn--prev"
+                                src="assets/img/left.png" height="11" alt="prev">Previous</button>
+                        <button type="button" class="modal-work__btn slickNext">Next<img class="modal-work__btn--next"
+                                src="assets/img/right.png" height="11" alt="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_4">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/4.1.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/4.2.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/4.3.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/4.4.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/4.5.webp" alt="prev">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">КиноЗал</h3>
+                        <div class="modal-work__info">
+                            Bulletin board<span class="modal-work__info-divider">|</span> 25.11.2020
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">client:</div>
+                        <div class="modal-work__client-name">none</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Сайт "КиноЗал" был свёрстан в рамках курса "Front-End". Был использовано Bootstrap 4. Данный сайт выделяется красивым дизайном и отличной адаптацией под различные устройства, присутствует форма Входа и Регистрации, карусель, а
+                            также вторая страница</p>
+                        <a class="link-small" target="_blank" href="https://nikita17-cod.github.io/kinozal/index.html">https://nikita17-cod.github.io/kinozal/index.html</a>
+
+                    </div>
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev"><img class="modal-work__btn--prev"
+                                src="assets/img/left.png" height="11" alt="prev">Previous</button>
+                        <button type="button" class="modal-work__btn slickNext">Next<img class="modal-work__btn--next"
+                                src="assets/img/right.png" height="11" alt="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_5">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/5.1.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/5.2.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/5.3.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/5.4.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/5.5.webp" alt="prev">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Grid-Template</h3>
+                        <div class="modal-work__info">
+                            Landing<span class="modal-work__info-divider">|</span> 14.10.2020
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">client:</div>
+                        <div class="modal-work__client-name">none</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Сайт был свёрстан в рамках курса "Front-End". Был использовано инструмент для создания двумерной сетки – Grid Layout. Данный сайт выделяется красивым дизайном, hover эффектами и отличной адаптацией под различные устройства.</p>
+                        <a class="link-small" target="_blank" href="https://nikita17-cod.github.io/grid-tamplate2/">https://nikita17-cod.github.io/grid-tamplate2/</a>
+
+                    </div>
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev"><img class="modal-work__btn--prev"
+                                src="assets/img/left.png" height="11" alt="prev">Previous</button>
+                        <button type="button" class="modal-work__btn slickNext">Next<img class="modal-work__btn--next"
+                                src="assets/img/right.png" height="11" alt="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_6">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/6.1.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/6.2.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/6.3.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/6.4.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/6.5.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/6.6.webp" alt="prev">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">HYPICONS</h3>
+                        <div class="modal-work__info">
+                            PROMO SITES<span class="modal-work__info-divider">|</span> 02.03.2020
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">client:</div>
+                        <div class="modal-work__client-name">none</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Практиковался в вёрстке</p>
+                        <a target="_blank" href="https://nikita17-cod.github.io/hypicons/">https://nikita17-cod.github.io/hypicons/</a>
+
+                    </div>
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev"><img class="modal-work__btn--prev"
+                                src="assets/img/left.png" height="11" alt="prev">Previous</button>
+                        <button type="button" class="modal-work__btn slickNext">Next<img class="modal-work__btn--next"
+                                src="assets/img/right.png" height="11" alt="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_7">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/7.1.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/7.2.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/7.3.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/7.4.webp" alt="prev">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">LUFT</h3>
+                        <div class="modal-work__info">
+                            PROMO SITES<span class="modal-work__info-divider">|</span> 06.01.2021
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">client:</div>
+                        <div class="modal-work__client-name">Bohdan</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Один из самых объёмных сайтов многостраничников. Свёрстан с использованием Bootstrap 5</p>
+                        <a target="_blank" href="https://nikita17-cod.github.io/luft/">https://nikita17-cod.github.io/luft/</a>
+
+                    </div>
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev"><img class="modal-work__btn--prev"
+                                src="assets/img/left.png" height="11" alt="prev">Previous</button>
+                        <button type="button" class="modal-work__btn slickNext">Next<img class="modal-work__btn--next"
+                                src="assets/img/right.png" height="11" alt="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_8">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/8.1.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/8.2.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/8.3.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/8.4.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/8.5.webp" alt="prev">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">MyPet</h3>
+                        <div class="modal-work__info">
+                            SITES BUSINESS CARD<span class="modal-work__info-divider">|</span>27.07.2021
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">client:</div>
+                        <div class="modal-work__client-name">Oleg NL</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Сайт делался на заказ для ветеринарной клиники. Стояла задача сверстать сайт по заранее нарисованному макету. Нужно было реализовать несколько каруселей, pop-ups и полную отзывчивость.</p>
+                        <a target="_blank" href="https://nikita17-cod.github.io/wet/">https://nikita17-cod.github.io/wet/</a>
+
+                    </div>
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev"><img class="modal-work__btn--prev"
+                                src="assets/img/left.png" height="11" alt="prev">Previous</button>
+                        <button type="button" class="modal-work__btn slickNext">Next<img class="modal-work__btn--next"
+                                src="assets/img/right.png" height="11" alt="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_2">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal__content print">
+                <h3 class="modal__title text-center">RESUME</h3>
+                <div class="text-center">
+                    <a class="btn btn--thin" href="assets/Resume.pdf" download>DOWNLOAD PDF</a>
+                    <button class="btn btn--thin" href="#" onclick="printEl()">PRINT</button>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__col timeline__col--left">
+                        <h4 class="timeline__title">EXPERIENCE</h4>
+                        <div class="timeline__item">
+                            <div class="timeline__date">2019
+                            </div>
+                            <h5 class="timeline__subtitle">Graduated from the course on Front-End development</h5>
+                            <div class="timeline__position">Student</div>
+                            <div class="timeline__text">
+                                <p>2019 - 2020 обучение на онлайн курсе "Front-End". </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__date">2020 - <b>Present</b></div>
+                            <h5 class="timeline__subtitle">Freelancer</h5>
+                            <div class="timeline__position">Web Developer</div>
+                            <div class="timeline__text">
+                                <p>После окончания онлайн курса "Front-End" и по сегодняшний день активно веду деятельность на различных фриланс биржах</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__date">2020</div>
+                            <h5 class="timeline__subtitle">Layout of the first large site</h5>
+                            <div class="timeline__position">Developer</div>
+                            <div class="timeline__text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, fugit at consequuntur sequi aut voluptatem magnam itaque autem debitis in, optio ratione rem deserunt eaque ea molestiae quod laboriosam? Illo!</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="timeline__date">2021 - <b>Present</b></div>
+                            <h5 class="timeline__subtitle">Developing my personal portfolio website</h5>
+                            <div class="timeline__position">Developer</div>
+                            <div class="timeline__text">
+                                <p>Верстаю свой собственный сайт-портфолио, в котором продемонстрировал небольшую часть моих навыков. На данный момент сайт дорабатывается</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__col timeline__col--right">
+                        <h4 class="timeline__title">EDUCATION</h4>
+
+                        <div class="timeline__item">
+                            <div class="timeline__date">2005 - 2010</div>
+                            <h5 class="timeline__subtitle">UI/UX Designer</h5>
+                            <div class="timeline__position">USA</div>
+                        </div>
+                        <h4 class="timeline__title">Skills</h4>
+                        <div class="progress-bar">
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">HTML</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 92%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">CSS</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 86%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">JS</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">Google</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 93%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="timeline__title">Awards</h4>
+
+                        <div class="timeline__item">
+                            <div class="timeline__date">2016</div>
+                            <h5 class="timeline__subtitle">UI/UX Designer</h5>
+                            <div class="timeline__position">USA</div>
+                            <div class="timeline__text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, fugit at consequuntur sequi aut voluptatem magnam itaque autem debitis in, optio ratione rem deserunt eaque ea molestiae quod laboriosam? Illo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a data-modal="#modal_3" class="btn" href="#">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_3">
+        <div class="modal__dialog modal__dialog--sm">
+            <button type="button" class="modal__close" data-close>
+                <img src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="contanct">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                    <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="assets/img/phone.svg" alt="phone"> +38 (067) 735-67-53
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="assets/img/mail.svg" alt="mail"> nikitakoshik064@gmail.com
+                        </li>
+                    </ul>
+
+
+                    <form class="form" id="form">
+                        <div class="form__group">
+                            <label for="input-email" class="form__label">Adress e-mail</label>
+                            <input id="input-email" name="email" type="text" class="form__input" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="input-email" class="form__label">Request</label>
+                            <textarea class="form__textarea" name="message" id="formMessage" placeholder="Type your request..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn">SEND</button>
+                        </div>
+                    </form>
+
+
+
+
+                </div>
+            </div>
+            <!-- <div class="soon">
+                <p>В скором времени будет доступно</p>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="assets/js/scroll.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZWS9FMQN0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NZWS9FMQN0');
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+</body>
+
+</html>
