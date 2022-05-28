@@ -17,12 +17,14 @@
     .about__img {
         width: 450px;
     }
+    .intro__inner {
+        min-height: 100%;
+    }
 }
 
 @media (max-width: 991px) {
     .intro__photo-img {
         width: 30rem;
-        // margin-right: 2rem;
     }
     .btn--thin {
         font-size: 0.85rem !important;
@@ -60,7 +62,6 @@
         padding-top: 5rem;
         padding-bottom: 3rem;
         background-size: 415px auto;
-        // justify-content: space-around
     }
     .intro__subtitle {
         font-size: 1.5rem;
@@ -99,9 +100,10 @@
             }
         }
     }
-    // .footer__inner {
-    //     text-align: center;
-    // }
+    .footer__inner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
     .footer__nav {
         align-items: baseline;
         flex-wrap: wrap;
@@ -111,9 +113,6 @@
         justify-content: center;
         width: 100%;
     }
-    // .footer__credits {
-    //     margin-bottom: 1rem;
-    // }
     .footer__nav-link {
         margin: 0 0.5rem 1rem;
     }
@@ -242,22 +241,15 @@
     .intro__inner {
         padding-top: 2rem;
         padding-bottom: 3rem;
-        // background-size: 325px auto;
         background: none;
     }
     .intro__content {
-        // display: flex;
         text-align: center;
         width: 100%;
     }
     .social {
         justify-content: center;
     }
-    // .reviews__item {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    // }
     .reviews__text {
         width: 600px;
     }
@@ -406,7 +398,7 @@
         margin: 1rem 0;
     }
     .footer__credits {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     #footer__nav {
         margin-bottom: 1rem;
@@ -414,7 +406,7 @@
     .footer__copyright {
         border-right: 0;
         margin-right: 0;
-        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     .btn {
         display: block;
@@ -473,10 +465,6 @@
     .user__prof {
         font-size: 0.75rem;
     }
-    // .burger {
-    //     width: 27.5px;
-    //     height: 27.5px;
-    // }
     .nav__link {
         padding: 0.4rem 1rem;
         font-size: 0.9rem;
@@ -506,30 +494,6 @@
 }
 
 @media (max-width: 375px) {
-    .burger {
-        width: 38px;
-    }
-    #nav-icon2 span:nth-child(5),
-    #nav-icon2 span:nth-child(6) {
-        top: 32px;
-    }
-    #nav-icon2 span:nth-child(1),
-    #nav-icon2 span:nth-child(2) {
-        top: 4px;
-    }
-    #nav-icon2 span {
-        height: 4.5px;
-    }
-    #nav-icon2 {
-        height: 46px;
-    }
-    #nav-icon2.open span:nth-child(1) {
-        left: 2px;
-        top: 13px;
-    }
-    #nav-icon2.open span:nth-child(2) {
-        top: 13px;
-    }
     .intro__choice {
         margin-top: 1.5rem;
     }

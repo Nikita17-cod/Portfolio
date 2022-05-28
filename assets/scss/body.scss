@@ -2,10 +2,9 @@
     position: relative;
     padding-top: 6.6rem;
     display: flex;
-    // border-bottom: 1px solid rgba(#6a696b, .3);
     border-bottom: 1px solid rgba(#EFEFEF, .3);
     padding-bottom: 8rem;
-    // background: url("../img/symbols.png") right bottom no-repeat;
+    min-height: 85vh;
 }
 
 .intro__choice {
@@ -94,14 +93,12 @@
     vertical-align: top;
     font-size: 1.06rem;
     color: #ebe5e5;
-    // color: #2b2a2c;
     text-transform: uppercase;
     text-decoration: none;
     border: 1px solid #6a696b;
     border-radius: 1.8em;
     padding: 1.05em 1.7em;
     background: #2B2A2C;
-    // background: none;
     font-family: inherit;
     line-height: 1.1;
     cursor: pointer;
@@ -120,13 +117,11 @@
     +.btn {
         margin-left: 1rem;
     }
-    // modificators
     &--sm {
         padding: .7em 1.1em;
         font-size: 0.94rem;
         font-weight: 700;
         border-width: 2px;
-        // padding: ;
     }
     &--thin {
         min-width: 145px;
@@ -147,7 +142,6 @@
 
 .works__nav-link {
     margin: 0 1.2rem;
-    // font-size: 0.8rem;
     font-size: 0.9rem;
     font-weight: bold;
     color: rgba(#2b2a2c, .7);
@@ -172,7 +166,6 @@
     &:hover {
         cursor: pointer;
     }
-    // box-shadow: 2px 2px 10px rgba(#000, 24%);
     overflow: hidden;
     transition: all.5s;
     &:hover {
@@ -189,8 +182,6 @@
 .work__content {
     padding: 1rem 0.8rem;
     background-color: #d1caca;
-    // background-color: #ebe5e5;
-    // border-top: 2px solid #c0baba;
 }
 
 .work__cat {
@@ -216,6 +207,7 @@
 .about__inner {
     padding-top: 6rem;
     border-top: 1px solid rgba(106, 105, 107, 0.3);
+    justify-content: center;
     display: flex;
     max-width: 1090px;
 }
@@ -233,16 +225,6 @@
         bottom: 0;
         z-index: 2;
     }
-    // &:before {
-    //     content: "";
-    //     width: 413px;
-    //     height: 413px;
-    //     background-color: #efefef;
-    //     position: absolute;
-    //     left: 1rem;
-    //     bottom: 24rem;
-    //     z-index: 1;
-    // }
 }
 
 .about__title {
@@ -274,7 +256,6 @@
 .about__text {
     margin-bottom: 2.8rem;
     font-size: 1rem;
-    // color: #6a696b;
     color: #2B2A2C;
     line-height: 2;
     font-weight: 500;
@@ -282,7 +263,6 @@
 
 .about__content {
     margin-top: 2rem;
-    padding-left: 3.2rem;
 }
 
 .reviews {

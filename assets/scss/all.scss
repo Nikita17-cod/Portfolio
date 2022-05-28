@@ -25,8 +25,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    // background: linear-gradient(-45deg, #c7c2c2, #d4c8c8, #ffffff, #a5afad);
-    // background: linear-gradient(-45deg, #eceaea, #f7f4f4, #f3eded, #fcfdf7);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     height: 100%;
@@ -93,10 +91,10 @@ p {
     position: fixed;
     left: 0;
     top: 0;
-    height: 0.9rem; // Высота линии, можно менять/подбирать
+    height: 0.9rem;
     width: 0%;
     opacity: .6;
-    background: #2B2A2C; // Цвет линии, можете заменить на HEX.
+    background: #2B2A2C;
     z-index: 9999;
 }
 
@@ -123,101 +121,75 @@ p {
     }
 }
 
-#nav-icon2 {
-    // width: 60px;
-    height: 50px;
-    position: relative;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
+.menu-btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 26px;
+    height: 26px;
     cursor: pointer;
+    z-index: 1;
+}
+
+#nav-icon2 {
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: block;
+    margin-left: -10px;
 }
 
 
 /* Icon 2 */
 
-#nav-icon2 span {
-    display: block;
+#nav-icon2 span,
+#nav-icon2:after,
+#nav-icon2:before {
+    height: 3px;
+    width: 100%;
     position: absolute;
-    height: 6px;
-    width: 50%;
-    background: #2B2A2C;
-    opacity: 1;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+    background: #515758;
+    margin: 0 auto;
 }
 
-#nav-icon2 span:nth-child(even) {
-    left: 50%;
-    border-radius: 0 9px 9px 0;
+#nav-icon2 span {
+    top: 17px;
 }
 
-#nav-icon2 span:nth-child(odd) {
-    left: 0px;
-    border-radius: 9px 0 0 9px;
+#nav-icon2:after,
+#nav-icon2:before {
+    content: '';
 }
 
-#nav-icon2 span:nth-child(1),
-#nav-icon2 span:nth-child(2) {
-    top: 0px;
+#nav-icon2:after {
+    bottom: 5px;
 }
 
-#nav-icon2 span:nth-child(3),
-#nav-icon2 span:nth-child(4) {
-    top: 18px;
+#nav-icon2:before {
+    top: 5px;
 }
 
-#nav-icon2 span:nth-child(5),
-#nav-icon2 span:nth-child(6) {
-    top: 36px;
-}
-
-#nav-icon2.open span:nth-child(1),
-#nav-icon2.open span:nth-child(6) {
-    transform: rotate(45deg);
-}
-
-#nav-icon2.open span:nth-child(2),
-#nav-icon2.open span:nth-child(5) {
-    transform: rotate(-45deg);
-}
-
-#nav-icon2.open span:nth-child(1) {
-    left: 5px;
-    top: 8px;
-}
-
-#nav-icon2.open span:nth-child(2) {
-    left: calc(50% - 5px);
-    top: 7px;
-}
-
-#nav-icon2.open span:nth-child(3) {
-    left: -50%;
+#nav-icon2.open span {
     opacity: 0;
+    transition: 0.5s;
 }
 
-#nav-icon2.open span:nth-child(4) {
-    left: 100%;
-    opacity: 0;
+#nav-icon2.open:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
 }
 
-#nav-icon2.open span:nth-child(5) {
-    left: 2px;
-    top: 26px;
-}
-
-#nav-icon2.open span:nth-child(6) {
-    left: calc(50% - 5px);
-    top: 25px;
+#nav-icon2.open:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
 }
 
 .one {
     height: 30rem !important;
-}
-
-.soon {
-    padding: 2rem;
-    padding-bottom: 1rem;
 }
 
 @keyframes gradient {
@@ -237,337 +209,6 @@ p {
     align-items: center;
     display: flex;
     height: 100%;
-}
-
-.robots {
-    width: 50%;
-    display: flex;
-    justify-content: center
-}
-
-.android {
-    position: relative;
-}
-
-.head,
-.left_arm,
-.torso,
-.right_arm,
-.left_leg,
-.right_leg {
-    background-color: #2B2A2C;
-}
-
-.head {
-    width: 200px;
-    margin: 0 auto;
-    height: 137px;
-    border-radius: 200px 200px 0 0;
-    margin-bottom: 10px;
-}
-
-.head:hover {
-    width: 300px;
-    transition: 1s ease-in-out;
-}
-
-.head:hover .right_eye,
-.head:hover .left_eye {
-    box-shadow: inset 5px 0 5px #A0CF4C;
-}
-
-.head:hover .mouth {
-    display: block;
-}
-
-.eyes {
-    display: flex
-}
-
-.left_eye,
-.right_eye {
-    width: 20px;
-    height: 20px;
-    border-radius: 15px;
-    background-color: white;
-}
-
-.left_eye {
-    /* These properties are new and you haven't encountered
-      in this course. Check out CSS Tricks to see what it does! */
-    position: relative;
-    top: 90px;
-    left: 40px;
-}
-
-.right_eye {
-    position: relative;
-    top: 90px;
-    left: 120px;
-}
-
-.mouth {
-    background-color: white;
-    width: 20px;
-    height: 1px;
-    position: relative;
-    top: 130px;
-    left: 48px;
-    display: none;
-}
-
-.upper_body {
-    width: 300px;
-    height: 150px;
-    display: flex;
-}
-
-.left_arm,
-.right_arm {
-    width: 40px;
-    height: 125px;
-    border-radius: 100px;
-    transition: all 1s;
-}
-
-.left_arm {
-    margin-right: 10px;
-}
-
-.left_arm:hover {
-    -webkit-transform: translate(0, -50%) scale(1.2);
-    -moz-transform: translate(0, -50%) scale(1.2);
-    -o-transform: translate(0, -50%) scale(1.2);
-    -ms-transform: translate(0, -50%) scale(1.2);
-    transform: translate(0, -50%) scale(1.2);
-}
-
-.right_arm {
-    margin-left: 10px;
-}
-
-.right_arm:hover {
-    -webkit-transform: translate(0, -50%) scale(1.2);
-    -moz-transform: translate(0, -50%) scale(1.2);
-    -o-transform: translate(0, -50%) scale(1.2);
-    -ms-transform: translate(0, -50%) scale(1.2);
-    transform: translate(0, -50%) scale(1.2);
-}
-
-.torso {
-    width: 200px;
-    height: 200px;
-    border-radius: 0 0 50px 50px;
-    display: flex;
-    justify-content: center
-}
-
-.energy_ball {
-    border-radius: 50%;
-    background-color: white;
-    height: 40px;
-    width: 40px;
-    position: relative;
-    top: 50px;
-    box-shadow: 0 0 20px #fff, 10px 0 40px #A0CF4C, -10px 0 40px #A0CF4C;
-}
-
-.torso:hover .energy_ball {
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-.lower_body {
-    display: flex;
-    width: 200px;
-    height: 122px;
-    /* This is another useful property. Hmm what do you think it does?*/
-    margin: 0 auto;
-}
-
-.left_leg,
-.right_leg {
-    width: 40px;
-    height: 120px;
-    border-radius: 0 0 100px 100px;
-}
-
-.left_leg {
-    margin-left: 45px;
-}
-
-.left_leg:hover {
-    -webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    transform: rotate(20deg);
-}
-
-.right_leg {
-    margin-left: 30px;
-}
-
-.right_leg:hover {
-    -webkit-transform: rotate(-20deg);
-    -moz-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-}
-
-.left_arm_a {
-    cursor: default;
-}
-
-@keyframes glow {
-    0% {
-        box-shadow: 0 0 20px #fff, 10px 0 40px #4792C5, -10px 0 40px #7D74AC, /*       inset 10px 0 20px #f0f */
-    }
-    30% {
-        box-shadow: 0 0 40px #fff, 10px 0 60px #A85F9B, -10px 0 60px #A0CF4C, /*       inset 20px 0 30px #f0f, */
-    }
-    100% {
-        box-shadow: 0 0 60px #fff, 10px 0 80px #4195C7, -10px 0 80px #28A4D3, inset -10px 0 40px #EA536D;
-    }
-}
-
-.loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
-}
-
-.scene {
-    width: 100%;
-    height: 100%;
-    perspective: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cube {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: rotation 10s infinite alternate;
-}
-
-@keyframes rotation {
-    0% {
-        transform: rotateY(0deg) rotateX(0deg);
-    }
-    100% {
-        transform: rotateY(720deg) rotateX(60deg);
-    }
-}
-
-.cube__face {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-}
-
-.cube__face--left {
-    background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
-    transform: translateX(-100px) rotateY(90deg);
-}
-
-.cube__face--right {
-    background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
-    transform: translateX(100px) rotateY(90deg);
-}
-
-.cube__face--bottom {
-    background-image: url('https://uploaddeimagens.com.br/images/000/955/231/full/bottom.jpg?1497835434');
-    transform: translateY(100px) rotateX(90deg);
-}
-
-.cube__face--top {
-    background-image: url('https://uploaddeimagens.com.br/images/000/955/233/thumb/top.jpg?1497835487');
-    transform: translateY(-100px) rotateX(90deg);
-}
-
-.cube__face--back {
-    background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
-    transform: translateZ(-100px);
-}
-
-.cube__face--front {
-    background-image: url('https://uploaddeimagens.com.br/images/000/955/232/full/side.jpg?1497835464');
-    transform: translateZ(100px);
-}
-
-.love {
-    position: relative;
-    width: 100px;
-    height: 90px;
-    top: 200px;
-    left: 190px;
-    transform-style: preserve-3d;
-    animation: spin 2s linear infinite;
-    // Shadow
-    &:after {
-        content: "";
-        position: absolute;
-        background: rgba(#000, .4);
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        box-shadow: 0 0 40px 5px rgba(#000, .7);
-        transform: translateX(37px) translateY(80px) rotateX(90deg);
-    }
-}
-
-.heart {
-    position: absolute;
-    width: 100px;
-    height: 90px;
-    // Halves
-    &:before,
-    &:after {
-        position: absolute;
-        content: "";
-        left: 50px;
-        top: 0;
-        width: 50px;
-        height: 80px;
-        border-radius: 50px 50px 0 0;
-        transform: rotate(-45deg);
-        transform-origin: 0 100%;
-    }
-    &:after {
-        left: 0;
-        transform: rotate(45deg);
-        transform-origin: 100% 100%;
-    }
-    &.dark {
-        transform: rotateY(0);
-    }
-    &.bright {
-        transform: rotateY(90deg);
-    }
-    &.dark:before,
-    &.dark:after {
-        background: darken(red, 10%);
-    }
-    &.bright:before,
-    &.bright:after {
-        background: darken(pink, 40%);
-    }
-}
-
-@keyframes spin {
-    to {
-        transform: rotateY(360deg);
-    }
 }
 
 .switch {

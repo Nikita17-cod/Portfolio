@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="scrollprogress-bar" id="progressBar"></div>
+    <!-- <div class="scrollprogress-bar" id="progressBar"></div> -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -52,7 +52,7 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                      </div>
+                    </div>
                     <!-- <img class="burger__icon" src="assets/img/burger.png" alt="burger"> -->
                 </button>
             </div>
@@ -108,6 +108,17 @@
                 <!-- <a class="works__nav-link" data-filter="soon" href="#">Online store</a> -->
             </div>
             <div class="portfolio" id="portfolio">
+                <div class="portfolio__col" data-cat="business">
+                    <div class="work" data-modal="#modal_project_9">
+                        <img class="work__img" src="assets/img/9.1.webp" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">SITE BUSINESS CARD</div>
+                            <div class="work__title">Daru Link
+                                <time class="work__date" datetime="2021-07-07 11:16">07.04.2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="portfolio__col" data-cat="business">
                     <div class="work" data-modal="#modal_project_8">
                         <img class="work__img" src="assets/img/8.1.webp" alt="img">
@@ -774,8 +785,64 @@
                         <div class="modal-work__client-name">Oleg NL</div>
                     </div>
                     <div class="modal-work__text">
-                        <p>Сайт делался на заказ для ветеринарной клиники. Стояла задача сверстать сайт по заранее нарисованному макету. Нужно было реализовать несколько каруселей, pop-ups и полную отзывчивость.</p>
+                        <p>Сайт делался на заказ для ветеринарной клиники. Стояла задача сверстать сайт по заранее нарисованному макету. Нужно было реализовать несколько каруселей, pop-ups и полную отзывчивость.
+                        </p>
                         <a target="_blank" href="https://nikita17-cod.github.io/wet/">https://nikita17-cod.github.io/wet/</a>
+
+                    </div>
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev"><img class="modal-work__btn--prev"
+                                src="assets/img/left.png" height="11" alt="prev">Previous</button>
+                        <button type="button" class="modal-work__btn slickNext">Next<img class="modal-work__btn--next"
+                                src="assets/img/right.png" height="11" alt="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_project_9">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-img" src="assets/img/close.png" width="34" height="34" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/9.1.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/9.2.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/9.3.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/9.4.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/9.5.webp" alt="prev">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="assets/img/9.6.webp" alt="prev">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Daru Link</h3>
+                        <div class="modal-work__info">
+                            SITES BUSINESS CARD<span class="modal-work__info-divider">|</span>07.04.2022
+                        </div>
+                    </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">client:</div>
+                        <div class="modal-work__client-name">none</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Сайт
+                        </p>
+                        <a target="_blank" href="https://nikita17-cod.github.io/daru/">https://nikita17-cod.github.io/daru/</a>
 
                     </div>
                     <div class="modal-work__footer">

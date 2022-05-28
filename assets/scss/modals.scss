@@ -257,7 +257,6 @@
     flex-direction: column;
 }
 
-// .progress-bar__left {}
 .progress-bar__right {
     padding-left: 1.2rem;
 }
@@ -290,14 +289,6 @@
     background: url(https://placehold.it/480x700) right center no-repeat;
 }
 
-// .contact__right {
-// }
-// .contact__img {
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//     z-index: 1;
-// }
 .contact__left {
     width: 100%;
     padding: 2rem;
@@ -343,9 +334,6 @@
     margin-left: 1.5rem;
 }
 
-// .form__input._error {
-//     box-shadow: 0 0 15px red;
-// }
 .form__input,
 .form__textarea {
     display: block;
